@@ -10,6 +10,8 @@ string nazwa;
 int main() {
     cout << "\t\t=================================" << endl;
     cout << "\t\t=== PROGRAM DO OBLICZANIA BMI ===" << endl;
+    cout << "\t\t===         wersja 3          ===" << endl;
+    cout << "\t\t===     nowa gałąź new2       ===" << endl;
     cout << "\t\t=================================\n\n" << endl;
 
     cout << "Podaj swoje imię i nazwisko: ";
