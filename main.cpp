@@ -1,24 +1,29 @@
 #include <iostream>
 #include <cstdlib>
 
+using namespace std;
 float waga, wzrost, wynik, analiza;
 float bmi(float waga, float wzrost);
 float wart(float analiza);
-
-using namespace std;
+string nazwa;
 
 int main() {
     cout << "\t\t=================================" << endl;
     cout << "\t\t=== PROGRAM DO OBLICZANIA BMI ===" << endl;
     cout << "\t\t=================================\n\n" << endl;
 
+    cout << "Podaj swoje imię i nazwisko: ";
+    getline (cin,nazwa);
+    cout << "\n\tMiło mi Cię powitać " << nazwa << " :)" << endl;
+    cout << "W tym programie dowiesz się, czy Twoja waga jest prawidłowa." << endl;
+    cout << endl;
     cout << "\tTwoja waga (wynik podaj w kilogramach): " ;
     cin >> waga;
     cout << "\tTwoj wzrost (wynik podaj w centymetrach): ";
     cin >> wzrost;
     cout << endl;
     wynik = bmi(waga, wzrost);
-
+    cout << "\t\t\t" << nazwa << endl;
     cout << "\t\tTwoje BMI wynosi: " << wynik << endl;
     cout << endl;
     cout << wart(analiza);
